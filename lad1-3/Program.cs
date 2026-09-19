@@ -45,4 +45,14 @@
 //{
 //    Console.WriteLine(ex.Message);
 //}
-
+try
+{ 
+Console.Write("Введите номер квартиры (от 1 до 15)");
+int y = int.Parse(Console.ReadLine());
+    int n = y / (15/5);
+    Console.WriteLine($"Номер этажа: {n} ");
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
